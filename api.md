@@ -1,11 +1,10 @@
 FORMAT: 1A
 
-# Sample da API
+# API Very Useful Tools to Remember
 
-Very Useful Tools to Remember.
 A aplicação é um simples repositório para gerenciar ferramentas com seus respectivos nomes, links, descrições e tags.
 
-# Grupo Tools
+# Grupo de endpoins Tools
 
 ## Tools [/tools]
 
@@ -39,6 +38,7 @@ A aplicação é um simples repositório para gerenciar ferramentas com seus res
 + tags (array[string]) - Lista de Tags
 
 + Request (application/json)
+    + Body
 
             {
  
@@ -61,7 +61,7 @@ A aplicação é um simples repositório para gerenciar ferramentas com seus res
 
 ## Tools [/tools/{id}]
 
-### Listar todas as ferramentas [DELETE]
+### Remover uma ferramenta [DELETE]
 
 API para remover uma ferramenta da base de dados
 
