@@ -84,8 +84,9 @@ A aplicação é um simples repositório para gerenciar ferramentas com seus res
 
 API para remover uma ferramenta da base de dados
 
-+ Response 200 (application/json)
 + Parameters
     + id (number) - Identificador da Ferramenta
+
++ Response 200 (application/json)
 
 
