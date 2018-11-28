@@ -16,11 +16,12 @@ A aplicação é um simples repositório para gerenciar ferramentas com seus res
 
 ### Como executar
 
-Primeira execuçãõ
+Antes de executar a primeira vez:
 ```js
 npm install 
 ```
 
+Executar:
 
 ```js
 npm start
