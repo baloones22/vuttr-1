@@ -27,6 +27,25 @@ A aplicação é um simples repositório para gerenciar ferramentas com seus res
                 ]
             }
         ]
+### Listar ferramentas pela TAG  [/tools{&tag}][GET]
++ Response 200 (application/json)
+
+        [
+ 
+            {
+                id: 1,
+                title: "Notion",
+                link: "https://notion.so",
+                description: "All in one tool to organize teams and ideas. Write, plan, collaborate, and get organized. ",
+                tags: [
+                    "organization",
+                    "planning",
+                    "collaboration",
+                    "writing",
+                    "calendar"
+                ]
+            }
+        ]
 
 ### Criar uma nova ferramenta [POST]
 

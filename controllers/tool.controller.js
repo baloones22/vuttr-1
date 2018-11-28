@@ -1,5 +1,8 @@
 const ToolRepository = require('../repositories/tool.repository');
 
+/**
+ * Controller do request /tools (GET)
+ */
 exports.get = (req, res, next) => {
 
     if (req.query.tag == null) {
@@ -16,6 +19,10 @@ exports.get = (req, res, next) => {
 
 };
 
+/**
+ * Controller do request /tools (POST)
+ * Criaçaõ de um nova ferramenta
+ */
 exports.post = (req, res, next) => {
     const t = req.body;
     ToolRepository.create(t)
@@ -24,6 +31,9 @@ exports.post = (req, res, next) => {
         }).catch(err => res.status(500).send(err))
 };
 
+/**
+ * Controller do request /tools/:id (DELETE)
+ */
 exports.delete = (req, res, next) => {
     ToolRepository.delete(req.params.id)
         .then((tool) => {
